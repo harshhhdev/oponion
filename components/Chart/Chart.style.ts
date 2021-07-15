@@ -61,6 +61,7 @@ export const ViewOption = styled('div', {
   transition: '0.1s linear',
   fontSize: '$3',
   margin: '10px 0',
+  userSelect: 'none',
   '&:hover': {
     cursor: 'pointer',
     color: '$white',

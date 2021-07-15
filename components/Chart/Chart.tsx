@@ -8,7 +8,7 @@ import firebase from '@components/FirebaseSDK'
 import Chart from 'echarts-for-react'
 
 const ChartComponent: React.FC = () => {
-  const [title, setTitle] = React.useState('Poll Title')
+  const [title, setTitle] = React.useState('Untitled Poll')
   const inputRef = React.useRef<HTMLInputElement>(null)
 
   let firebaseRef = firebase.database().ref('Oponion/Polls')
@@ -23,29 +23,35 @@ const ChartComponent: React.FC = () => {
   }
 
   const AddOption = () => {
-    updateOptions([
-      ...options,
-      { name: optionInputRef.current!.value, value: 1 },
-    ])
-    optionInputRef.current!.value = ''
+    if (options.length < 25 && optionInputRef.current!.value !== '') {
+      updateOptions([
+        ...options,
+        { name: optionInputRef.current!.value, value: 1 },
+      ])
+      optionInputRef.current!.value = ''
+    }
   }
 
   const DeleteOption: React.MouseEventHandler<HTMLElement> = (e) => {
-    const name = e.currentTarget.getAttribute('id')
-    updateOptions(options.filter((options) => options.name !== name))
+    if (options.length > 2) {
+      const name = e.currentTarget.getAttribute('id')
+      updateOptions(options.filter((options) => options.name !== name))
+    }
   }
 
   const CreatePoll = () => {
-    firebaseRef
-      .push({
-        title: title,
-        options: options,
-        totalVotes: 0,
-      })
-      .then((snap) => {
-        Router.push(snap.key!)
-        console.log(snap)
-      })
+    if (title !== '') {
+      firebaseRef
+        .push({
+          title: title,
+          options: options,
+          totalVotes: 0,
+        })
+        .then((snap) => {
+          Router.push(snap.key!)
+          console.log(snap)
+        })
+    }
   }
 
   React.useEffect(() => {
