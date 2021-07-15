@@ -1,20 +1,18 @@
 import React from 'react'
 
-import Head from '@components/Head'
-import Chart from '@components/Chart/Chart'
+import View from '@components/View/ViewPoll'
 import Footer from '@components/Footer/Footer'
 import global from '@css/global.style'
 
-const Home: React.FC = () => {
+const ViewPoll = () => {
   global()
 
   return (
     <>
-      <Head title="New" />
-      <Chart />
+      <View />
       <Footer />
     </>
   )
 }
 
-export default Home
+export default ViewPoll
