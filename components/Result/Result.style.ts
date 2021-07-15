@@ -18,6 +18,7 @@ export const LoadingWrapper = styled('div', {
 export const Title = styled('h1', {
   fontSize: '$5',
   marginTop: 100,
+  textAlign: 'center',
 })
 
 export const ChartContainer = styled('div', {
