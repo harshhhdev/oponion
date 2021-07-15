@@ -68,6 +68,7 @@ Server should now be running on [localhost](https://localhost:3000)
  - [Firebase](https://firebase.google.com/)
  - [TypeScript](https://www.typescriptlang.org/)
  - [Next.js](https://nextjs.org/)
+ - [Apache ECharts](https://echarts.apache.org/)
  - [Prettier](https://prettier.io/)
  - [ESLint](https://eslint.org/)
 
