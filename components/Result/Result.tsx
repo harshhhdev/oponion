@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 
 import Head from '@components/Head'
 import firebase from '@components/FirebaseSDK'
+import Share from '@components/Share/Share'
 
 import * as S from './Result.style'
 import Chart from 'echarts-for-react'
@@ -86,6 +87,7 @@ const ViewPoll: React.FC = () => {
         <S.ChartContainer>
           <Chart option={ChartOptions} />
         </S.ChartContainer>
+        <Share title={title} id={id!.toString()} results={true} />
       </S.Wrapper>
     )
   } else {

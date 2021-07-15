@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 
 import Head from '@components/Head'
 import firebase from '@components/FirebaseSDK'
+import Share from '@components/Share/Share'
 
 import * as S from './ViewPoll.style'
 import ReactLoading from 'react-loading'
@@ -74,6 +75,7 @@ const ViewPoll: React.FC = () => {
             </S.OptionsBox>
           ))}
         </S.OptionsWrapper>
+        <Share title={title} id={id!.toString()} results={false} />
       </S.Wrapper>
     )
   } else {

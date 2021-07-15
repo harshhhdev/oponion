@@ -1032,6 +1032,11 @@ convert-source-map@1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
+copy-lite@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/copy-lite/-/copy-lite-0.1.2.tgz#19dc8eea01f0f039feeefe855ee93754723a4c2f"
+  integrity sha512-dj1igABnpUe7WEO6Rs+nEIdmxHvI/n4E7FnlpgKqxcgVmnvs53X1PXGZ37Z3l7hu4O7IjhaVPX4Y9XlCOaG6ww==
+
 core-js-pure@^3.15.0:
   version "3.15.2"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.15.2.tgz#c8e0874822705f3385d3197af9348f7c9ae2e3ce"

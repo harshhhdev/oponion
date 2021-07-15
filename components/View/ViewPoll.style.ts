@@ -25,7 +25,7 @@ export const OptionsWrapper = styled('div', {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  marginTop: 50,
+  margin: '50px 0',
 })
 
 export const OptionsBox = styled('div', {
