@@ -30,6 +30,10 @@ const Header: React.FC<{ title: string }> = ({ title }) => {
         property="og:image"
         content="https://github.com/harshhhdev/oponion/blob/main/public/OponionBanner.png?raw=true"
       />
+      <meta
+        property="twitter:image"
+        content="https://github.com/harshhhdev/oponion/blob/main/public/OponionBanner.png?raw=true"
+      />
     </Head>
   )
 }
