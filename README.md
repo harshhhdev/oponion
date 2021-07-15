@@ -30,30 +30,9 @@ Now, rename `components/FirebaseSDK.example.ts` to `FirebaseSDK.ts`
 
 Go to [Firebase](https://console.firebase.google.com/u/0/), and create a new project. Enable the realtime database.
 
-```ts
-import firebase from 'firebase'
+If using anayltics, uncomment the `firebase.anayltics()` function
 
-const FirebaseConfig = {
-  databaseURL: '',
-  apiKey: '',
-  authDomain: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: '',
-}
-
-if (!firebase.apps.length) {
-  firebase.initializeApp(FirebaseConfig)
-} else {
-  firebase.app()
-}
-
-// If using anayltics
-// firebase.analytics()
-
-export default firebase
-```
+Go into project settings, and copy paste the content inside of the FirebaseConfig to the object
 
 ## Starting server
 
