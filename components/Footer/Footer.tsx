@@ -28,6 +28,9 @@ const FooterWrapper = styled('div', {
 const FooterText = styled('p', {
   fontSize: '$3',
   margin: '0 10px',
+  '@iPhoneSE': {
+    fontSize: '$2',
+  },
 })
 
 const FooterLink = styled('a', {

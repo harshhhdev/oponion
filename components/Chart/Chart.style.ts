@@ -42,6 +42,11 @@ export const OptionsName = styled('input', {
   border: 'none',
   borderRadius: 5,
   marginRight: 20,
+  '@iPhoneSE': {
+    fontSize: '$2',
+    padding: '20px 15px',
+    marginRight: 10,
+  },
 })
 
 export const CreateOption = styled('div', {
