@@ -9,7 +9,7 @@
 
 # 🚀 Quickstart 
 
-Running website + development server locally
+Run the website locally
 
 ```
 git clone https://github.com/harshhhdev/oponion.git
