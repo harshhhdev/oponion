@@ -33,4 +33,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-components/FirebaseSDK.ts
+components/FirebaseSDK.config.ts
