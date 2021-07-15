@@ -26,7 +26,7 @@ yarn
 
 # Setting up [Firebase](https://firebase.google.com/)
 
-Now, rename `components/FirebaseSDK.example.ts` to `FirebaseSDK.ts`
+Now, rename `components/FirebaseSDK.example.config.ts` to `FirebaseSDK.config.ts`
 
 Go to [Firebase](https://console.firebase.google.com/u/0/), and create a new project. Enable the realtime database.
 
