@@ -6,6 +6,11 @@
   </a>
 </p> 
 <p align="center">⚡ Creating, voting, and sharing polls made simple</p>
+<p align="center">
+  <a href="https://www.figma.com/file/DzKnopExFvjt64AZEpdVPV/Oponion?node-id=0%3A1&viewport=112%2C63%2C0.2566978633403778">Design Board</a>
+    ·
+  <a href="https://oponion.vercel.app/">Demo</a>
+ </p>
 
 # 🚀 Quickstart 
 
