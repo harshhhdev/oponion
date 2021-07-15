@@ -31,13 +31,13 @@ yarn
 
 # Setting up [Firebase](https://firebase.google.com/)
 
-Now, rename `components/FirebaseSDK.example.config.ts` to `FirebaseSDK.config.ts`
+Now, rename `.env.local.example` to `.env.local`
 
 Go to [Firebase](https://console.firebase.google.com/u/0/), and create a new project. Enable the realtime database.
 
-If using anayltics, uncomment the `firebase.anayltics()` function
+Replace all the fields in the `env` file with appropriate values.
 
-Go into project settings, and copy paste the content inside of the FirebaseConfig to the object
+If using anayltics, uncomment the `firebase.anayltics()` function in the `lib/FirebaseSDK.ts` file
 
 ## Starting server
 
