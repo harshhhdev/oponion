@@ -16,4 +16,7 @@ if (!firebase.apps.length) {
   firebase.app()
 }
 
+// If using anayltics
+// firebase.analytics()
+
 export default firebase
