@@ -18,6 +18,7 @@ export const LoadingWrapper = styled('div', {
 export const Title = styled('h1', {
   fontSize: '$5',
   marginTop: 100,
+  textAlign: 'center',
 })
 
 export const OptionsWrapper = styled('div', {
@@ -35,6 +36,7 @@ export const OptionsBox = styled('div', {
   background: '$primary',
   color: '$white',
   width: '30vw',
+  minWidth: 300,
   fontSize: '$3',
   padding: 20,
   margin: '5px 0',

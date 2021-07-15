@@ -15,6 +15,9 @@ export const Input = styled('input', {
   outline: 'none',
   border: 'none',
   marginBottom: 50,
+  '@iPhonePlus': {
+    width: '80vw',
+  },
 })
 
 export const ChartContainer = styled('div', {

@@ -9,10 +9,20 @@ const Wrapper = styled('div', {
   alignItems: 'center',
   color: '$main',
   margin: '150px 0 50px 0',
+  '@iPhonePlus': {
+    flexDirection: 'column',
+  },
 })
 
 const FooterWrapper = styled('div', {
   display: 'flex',
+  variants: {
+    container: {
+      true: {
+        marginTop: 20,
+      },
+    },
+  },
 })
 
 const FooterText = styled('p', {
@@ -39,7 +49,7 @@ const FooterLink = styled('a', {
 const Footer: React.FC = () => {
   return (
     <Wrapper>
-      <FooterWrapper>
+      <FooterWrapper container>
         <FooterLink
           href="https://github.com/harshhhdev/oponion"
           target="_blank"
@@ -56,7 +66,7 @@ const Footer: React.FC = () => {
           </FooterLink>
         </FooterText>
       </FooterWrapper>
-      <FooterWrapper>
+      <FooterWrapper container>
         <FooterText>
           © 2021{' '}
           <FooterLink href="https://harshhhdev.github.io/" target="_blank" text>
