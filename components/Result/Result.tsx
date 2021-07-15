@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 import Head from '@components/Head'
-import firebase from '@components/FirebaseSDK'
+import firebase from '@lib/FirebaseSDK'
 import Share from '@components/Share/Share'
 
 import * as S from './Result.style'
@@ -76,8 +76,6 @@ const ViewPoll: React.FC = () => {
       },
     ],
   }
-
-  console.log(ChartOptions)
 
   if (title !== null) {
     return (

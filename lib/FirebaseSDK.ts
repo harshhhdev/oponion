@@ -1,5 +1,7 @@
 import firebase from 'firebase'
 
+console.log('hi' + process.env.FIREBASE_API_KEY)
+
 const FirebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
@@ -12,7 +14,5 @@ const FirebaseConfig = {
 }
 
 !firebase.apps.length ? firebase.initializeApp(FirebaseConfig) : firebase.app()
-
-console.log(FirebaseConfig)
 
 export default firebase

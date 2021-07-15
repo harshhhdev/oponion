@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 import Head from '@components/Head'
-import firebase from '@components/FirebaseSDK'
+import firebase from '@lib/FirebaseSDK'
 import Share from '@components/Share/Share'
 
 import * as S from './ViewPoll.style'
@@ -11,7 +11,6 @@ import ReactLoading from 'react-loading'
 const ViewPoll: React.FC = () => {
   const Router = useRouter()
   const { id } = Router.query
-  console.log(id)
 
   const [title, setTitle] = React.useState('Poll Title')
   const [options, setOptions] = React.useState<

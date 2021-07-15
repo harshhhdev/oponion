@@ -4,7 +4,7 @@ import Router from 'next/router'
 import * as S from './Chart.style'
 import * as Icons from 'react-feather'
 
-import firebase from '@components/FirebaseSDK'
+import firebase from '@lib/FirebaseSDK'
 import Chart from 'echarts-for-react'
 
 const ChartComponent: React.FC = () => {
@@ -49,7 +49,6 @@ const ChartComponent: React.FC = () => {
         })
         .then((snap) => {
           Router.push(snap.key!)
-          console.log(snap)
         })
     }
   }
