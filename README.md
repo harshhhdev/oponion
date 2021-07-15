@@ -50,6 +50,7 @@ Server should now be running on [localhost](https://localhost:3000)
  - [Apache ECharts](https://echarts.apache.org/)
  - [Prettier](https://prettier.io/)
  - [ESLint](https://eslint.org/)
+ - [Figma](https://www.figma.com/)
 
 # 🤞 Contributing
 
